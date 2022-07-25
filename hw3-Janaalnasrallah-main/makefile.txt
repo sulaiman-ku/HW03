@@ -1,0 +1,19 @@
+shape:
+	gcc -c shapes.c
+	gcc shapes.o -o shapes
+cstrptr:
+	gcc -c cstrptr.c
+	gcc cstrptr.o cstrptr
+
+cstr:
+	gcc -c cstr.c
+	gcc cstr.o -o cstr
+bitwise:
+	gcc -c bitwise_main.c 
+	gcc -c bitwise.c
+	gcc bitwise.o bitwise_main.o -o bitwise
+clean:
+	rm shapes.o       
+	rm cstrptr.o
+	rm cstr.o
+	rm bitwise.o

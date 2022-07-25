@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define SIZE 100
+
+
+
+
+int main(int argc,char *argv[])
+{
+	if(argc!=3)
+	{
+		printf("error");
+ 		exit(1);
+	}	
+char *s1=argv[1];
+char *s2=argv[2];
+
+printf("Length: %ld %ld\n",strlen(s1),strlen(s2)); 
+printf("Compare: %d\n",strcmp(s1,s2));
+printf("Concatenate: %s!\n",strcat(s1,s2)); 
+printf("Copy: %s %s\n",s1,strcpy(s2,s1i);
+return 0;
+}
